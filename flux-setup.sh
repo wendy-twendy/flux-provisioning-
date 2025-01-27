@@ -6,7 +6,7 @@
 
 # Packages are installed after nodes so we can fix them...
 
-DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/workflows/flux-comfyui-example.json"
+DEFAULT_WORKFLOW="https://raw.githubusercontent.com/wendy-twendy/flux-provisioning-/refs/heads/main/flux-workflow.json"
 
 APT_PACKAGES=(
     "git" # Add git to apt packages
@@ -22,6 +22,7 @@ NODES=(
 )
 
 CHECKPOINT_MODELS=(
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev" 
     "https://civitai.com/api/download/models/84728" # Photon (needed for IC-Light)
     "https://civitai.com/api/download/models/133005" # Juggernaut XL (needed for MV Adapter)
 )
